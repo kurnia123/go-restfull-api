@@ -13,12 +13,34 @@
 - [Go UUID](github.com/nu7hatch/gouuid)
 
 ## Installation
-Menggunakan Golang versi 1.17
+Use Golang **version 1.17**
 
 ```sh
 git clone https://github.com/kurnia123/go-restfull-api.git
 cd go-restfull-api
 go get .
+```
+
+Create File **.env** in root project
+
+```sh
+echo > .env
+```
+
+Add configuration in **.env** file
+```
+HOST=localhost
+PORT=8080
+
+DB_USER=[your username]
+DB_HOST=localhost
+DB_PASSWORD=[your password]
+DB_DATABASE=belajar_restfull_golang
+DB_PORT=3306
+
+ACCESS_TOKEN_KEY=1caa40d6db685726f28387396335ff4ab5b66f52ae508478a98906dad1eb2996cbb82ee1adfa47368ab36bc5dc64b588380cc1880ff9adaa1bd30a8d470abcdc
+REFRESH_TOKEN_KEY=31b8365e3ba61ea4350b4e2b39354c608c5394b85a0fae3e5210e9296d1f992da141b51fa414650bfe617325b5327d481b1b53fc4dc748c20ee58a28fb0576a9
+ACCESS_TOKEN_AGE=1800
 ```
 
 Run Server
@@ -32,26 +54,3 @@ go run main.go
 MIT
 
 **Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
